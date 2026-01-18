@@ -10,9 +10,9 @@ module TechlogApp
     config.autoload_lib(ignore: %w[assets tasks])
 
     config.generators do |g|
-      g.assets false
-      g.helper false
-      g.test_framework :rspec
+      g.assets false # CSS, JavaScriptファイルを自動生成しない
+      g.helper false # helperファイルを自動生成しない
+      g.test_framework :rspec # テストフレームワークをrspecに設定する
     end
   end
 end
